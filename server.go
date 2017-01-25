@@ -26,6 +26,9 @@ func main() {
 	e.POST("/save2", save2)
 	e.POST("/users", users)
 
+	//http://localhost:1323/static/hello.html
+	e.Static("/static", "static")
+
 	//e.POST("/users", saveUser)
 	//e.GET("/users/:id", getUser)
 	//e.PUT("/users/:id", updateUser)
